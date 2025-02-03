@@ -1,0 +1,315 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 2em;
+    background: linear-gradient(135deg, #ff6f61, #ffcc5c);
+    color: #121212;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    margin: 1em 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f8f8f8;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image {
+    max-width: 45%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about {
+    padding: 3em 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill i {
+    font-size: 3rem;
+    color: #ff6f61;
+}
+
+.skill sup {
+    font-size: 0.8rem;
+    vertical-align: super;
+    margin-left: 2px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Projects Section */
+.projects {
+    padding: 3em 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 30%;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 1em;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    margin-top: 0.5em;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 3em 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    display: grid;
+    gap: 1em;
+}
+
+form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    padding: 0.8em 1.5em;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    padding: 2em;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.socials a {
+    margin: 0 0.5em;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 2em;
+    }
+
+    .skills {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .project-list {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
